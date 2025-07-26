@@ -1,20 +1,15 @@
 [![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
 
-I'm currently pursuing a Master's degree in XX at the Department of XX, XX University, XX.
+He is pursuing a bachelor's degree in the Electrical Engineering and Automation(Experimental Class) at Northeast Electric Power University.
 
-#### Email  
-<code>XX@XX.XX</code>  
-<code>XX@XX.XX</code>
+#### Contact 
+<code>15143261565@163.com</code>  
+<code>jefferysteven404@gmail.com</code>
 
 #### Education  
-**XX University**, Master of XX (XX – XX)  
-• GPA: XX/XX  
+**Northeast Electric Power University**, Bachelor of Electrical Engineering and Automation,2024-2028. 
+• GPA: 3.18/5.00  
 
-**XX University**, Exchange student <br>  
-• As a XX, represented my college as an outstanding student for a XX exchange program.  
-
-**XX University**, Honours Bachelor of XX (XX – XX)  
-• GPA: XX/XX (top XX%)  
 
 #### Research Interests  
-XX, XX, XX, XX.
+Circuit,Analog Electronic Technology,Electromagnetic Field
