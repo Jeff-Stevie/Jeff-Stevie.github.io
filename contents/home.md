@@ -8,7 +8,7 @@ He is pursuing a bachelor's degree in the Electrical Engineering and Automation(
 
 #### Education  
 **Northeast Electric Power University**, Bachelor of Electrical Engineering and Automation,2024-2028. 
-• GPA: 3.18/5.00  
+
 
 
 #### Research Interests  
