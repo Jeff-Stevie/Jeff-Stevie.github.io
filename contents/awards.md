@@ -1,1 +1,1 @@
-Outstanding Member of the CYLC,2025.
+Outstanding Member of the [CYLC](https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E9%9D%92%E5%B9%B4%E5%9B%A2/405736),2025.
