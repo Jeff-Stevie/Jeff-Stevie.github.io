@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="yixin0313" />
+    <meta name="author" content="Jeff Stevie" />
     <title id="title"></title>
 
     <!-- Icon -->
@@ -83,13 +83,17 @@
     <!-- Navigation-->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
+            <!-- 动态标题（默认显示名称） -->
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">Dr. John Doe</a>
+
+            <!-- 响应式折叠按钮 -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU
                 <i class="bi-list"></i>
             </button>
+
+            <!-- 导航菜单 -->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item">
@@ -102,7 +106,7 @@
                         <a class="nav-link me-lg-3" href="#experience">EXPERIENCE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#strengths">EXPERIENCE</a>
+                        <a class="nav-link me-lg-3" href="#strengths">STRENGTHS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
@@ -111,6 +115,37 @@
             </div>
         </div>
     </nav>
+
+    <!-- 平滑滚动和激活状态脚本 -->
+    <script>
+        // 平滑滚动（兼容Safari）
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 设置当前活动菜单项
+        window.addEventListener('hashchange', updateActiveNav);
+        function updateActiveNav() {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.toggle('active',
+                    link.href === window.location.href.split('#')[0] + link.getAttribute('href'));
+            });
+        }
+        updateActiveNav();
+    </script>
+    <button id="darkModeToggle" class="btn btn-sm">
+        <i class="bi-moon-fill"></i>
+    </button>
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 
     <!-- Top Section -->
     <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
@@ -160,7 +195,6 @@
         </div>
     </section>
     <!-- Experience -->
-    
     <!-- Strengths -->
     <section class="bg-gradient-primary-to-secondary-dark mt5 md5" id="strengths">
         <div class="container px-5">
@@ -171,7 +205,6 @@
         </div>
     </section>
     <!-- Strengths -->
-   
     <!-- Publications -->
     <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
         <div class="container px-5">
