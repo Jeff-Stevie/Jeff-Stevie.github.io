@@ -61,3 +61,15 @@ window.addEventListener('DOMContentLoaded', event => {
     })
 
 }); 
+// 加载strengths.md
+fetch('path/to/strengths.md')  // 确保路径正确
+    .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.text();
+    })
+    .then(text => {
+        document.getElementById('strengths-md').innerHTML = marked.parse(text);
+    })
+    .catch(error => {
+        console.error('Error loading strengths.md:', error);
+    });
